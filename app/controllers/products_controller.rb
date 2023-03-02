@@ -11,11 +11,12 @@ class ProductsController < ApplicationController
 
     def create
         @product = Product.create(
-            name: "Ranunculus",
-            price: 3,
-            image_url: "test.jpg",
-            description: "A beautiful and delicate flower that comes in a variety of colors"
+            name: params[:name],
+            price: params[:price],
+            image_url: params[:image_url],
+            description: params[:description],
         )
+        @product.save
         render :show
     end
 
