@@ -11,3 +11,12 @@ Content-Type: application/json
     "image_url": "test.jpg",
     "description": "A green stem with a pleasant scent."
 }
+
+###
+
+PATCH http://localhost:3000/products/1.json
+Content-Type: application/json
+
+{
+    "name": "White Delphinium"
+}
