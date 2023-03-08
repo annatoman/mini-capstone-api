@@ -18,6 +18,12 @@ class ProductsController < ApplicationController
         )
         @product.save
         render :show
+
+        if @product.valid?
+            render :show
+        else
+
+        end
     end
 
     def update
