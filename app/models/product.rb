@@ -17,12 +17,18 @@ class Product < ApplicationRecord
         return total
     end
 
-    def supplier
-      Supplier.find_by(id: supplier_id)
-    end
+    belongs_to :supplier
+    # def supplier
+    #   Supplier.find_by(id: supplier_id)
+    # end
 
-    validates :name, presence: true, uniqueness: true, length: { maximum: 12 }
-    validates :price, presence: true, numericality: true, numericality: { greater_than: 0}
-    validates :description, length: { minimum: 10}
+    has_many :images
+    # def images
+    #   Image.where(productid: id)
+    # end
+
+    # validates :name, presence: true, uniqueness: true, length: { maximum: 12 }
+    # validates :price, presence: true, numericality: true, numericality: { greater_than: 0}
+    # validates :description, length: { minimum: 10}
   
 end
