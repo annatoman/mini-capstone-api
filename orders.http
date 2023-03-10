@@ -1,0 +1,19 @@
+POST http://localhost:3000/orders.json
+Authorization: Bearer $2a$12$j.5Us2x07pjez3Axm61nBOIounmuFMD4rkBWbESjbH/cwagx7YZhK
+Content-Type: application/json
+
+{
+    "user_id": 1,
+    "product_id": 4,
+    "quantity": 1,
+    "subtotal": 5.00,
+    "tax": 0.09,
+    "total": 5.45
+}
+
+###
+
+GET http://localhost:3000/orders/1.json
+
+###
+GET http://localhost:3000/orders.json

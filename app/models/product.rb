@@ -27,6 +27,8 @@ class Product < ApplicationRecord
     #   Image.where(productid: id)
     # end
 
+    has_many :orders
+
     # validates :name, presence: true, uniqueness: true, length: { maximum: 12 }
     # validates :price, presence: true, numericality: true, numericality: { greater_than: 0}
     # validates :description, length: { minimum: 10}

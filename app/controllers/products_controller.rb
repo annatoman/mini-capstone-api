@@ -33,7 +33,6 @@ class ProductsController < ApplicationController
         description: params[:description] || @product.description,
         quantity_in_stock: params[:quantity_in_stock] || @product.quantity_in_stock
         )
-        render :show
         if @product.valid?
             render :show
         else
