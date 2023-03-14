@@ -1,19 +1,21 @@
+
+@jwt = 
+
 POST http://localhost:3000/orders.json
-Authorization: Bearer $2a$12$j.5Us2x07pjez3Axm61nBOIounmuFMD4rkBWbESjbH/cwagx7YZhK
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-    "user_id": 1,
-    "product_id": 4,
-    "quantity": 1,
-    "subtotal": 5.00,
-    "tax": 0.09,
-    "total": 5.45
+  "product_id": 1,
+  "quantity": 3
 }
 
 ###
 
 GET http://localhost:3000/orders/1.json
+Authorization: Bearer {{jwt}}
 
 ###
+
 GET http://localhost:3000/orders.json
+Authorization: Bearer {{jwt}}

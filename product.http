@@ -1,8 +1,9 @@
-GET http://localhost:3000/products/1.json
+@jwt = 
 
-###
+@jwt_admin = 
 
 POST http://localhost:3000/products.json
+Authorization: Bearer {{jwt_admin}}
 Content-Type: application/json
 
 {
@@ -15,13 +16,4 @@ Content-Type: application/json
 
 ###
 
-PATCH http://localhost:3000/products/1.json
-Content-Type: application/json
-
-{
-    "name": "White Delphinium"
-}
-
-###
-
-DELETE http://localhost:3000/products/1.json
+GET http://localhost:3000/products.json
