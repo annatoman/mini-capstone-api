@@ -32,4 +32,5 @@ class Product < ApplicationRecord
     # validates :price, presence: true, numericality: true, numericality: { greater_than: 0}
     # validates :description, length: { minimum: 10}
   
+    has_many :product_categories
 end
