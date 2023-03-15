@@ -11,3 +11,4 @@ json.updated_at product.updated_at
 json.supplier product.supplier
 json.images product.images
 json.quantity_in_stock product.quantity_in_stock
+json.categories product.categories

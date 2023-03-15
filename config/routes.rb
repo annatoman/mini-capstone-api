@@ -20,4 +20,6 @@ Rails.application.routes.draw do
   get "/orders/:id" => "orders#show"
 
   get "/orders" => "orders#index"
+
+  get "/products.json?category" => "products#categories"
 end

@@ -33,4 +33,5 @@ class Product < ApplicationRecord
     # validates :description, length: { minimum: 10}
   
     has_many :product_categories
+    has_many :categories, through: :product_categories
 end
