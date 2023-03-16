@@ -1,0 +1,10 @@
+POST http://localhost:3000/carted_products.json
+Content-Type: application/json
+
+{
+    "user_id": 1,
+    "product_id": 2,
+    "quantity": 1,
+    "status": "true",
+    "order_id": 1
+}
