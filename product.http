@@ -16,4 +16,4 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/products.json
+GET http://localhost:3000/products.json?category=AmericanFlowers
