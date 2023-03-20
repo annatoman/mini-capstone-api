@@ -1,15 +1,9 @@
 Rails.application.routes.draw do
   get "/products" => "products#index"
-
-  get "/products/:id" => "products#show"
-
   post "/products" => "products#create"
-
+  get "/products/:id" => "products#show"
   patch "/products/:id" => "products#update"
-
   delete "/products/:id" => "products#destroy"
-
-  get "/suppliers" => "suppliers#index"
 
   post "/users" => "users#create"
 
@@ -21,9 +15,12 @@ Rails.application.routes.draw do
 
   get "/orders" => "orders#index"
 
-  get "/products.json" => "products#index"
-
-  get "/carted_products" => "carted_products#index"
 
   post "/carted_products" => "carted_products#create"
+  get "/carted_products" => "carted_products#index"
+  delete "/carted_products/:id" => "carted_products#destroy"
+
+  # get "/suppliers" => "suppliers#index"
+  # get "/products.json" => "products#index"
+
 end

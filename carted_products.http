@@ -19,7 +19,6 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NzkxNTcwM
 Content-Type: application/json
 
 {
-    "user_id": 1,
     "subtotal": 1,
     "tax": 0.09,
     "total": 1.09
