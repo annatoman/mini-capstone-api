@@ -21,7 +21,9 @@ Rails.application.routes.draw do
 
   get "/orders" => "orders#index"
 
-  get "/products.json?category" => "products#categories"
+  get "/products.json" => "products#index"
+
+  get "/carted_products" => "carted_products#index"
 
   post "/carted_products" => "carted_products#create"
 end

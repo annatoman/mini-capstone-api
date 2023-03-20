@@ -1,10 +1,26 @@
 POST http://localhost:3000/carted_products.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NzkxNTcwMzR9.y-mqVnVwD_u1FbID16MWMY2qJgb6wdOyeZKeb4jFACY
+Content-Type: application/json
+
+{
+    "product_id": 2,
+    "quantity": 1,
+    "status": "carted",
+    "order_id": 1
+}
+
+###
+GET http://localhost:3000/carted_products.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NzkxNTc2MDh9.Oynp18zufgVaDOnCp2v8j2G9I-wiUw1bAWTIYaBsQ-c
+
+###
+POST http://localhost:3000/carted_products.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NzkxNTcwMzR9.y-mqVnVwD_u1FbID16MWMY2qJgb6wdOyeZKeb4jFACY
 Content-Type: application/json
 
 {
     "user_id": 1,
-    "product_id": 2,
-    "quantity": 1,
-    "status": "true",
-    "order_id": 1
-}
+    "subtotal": 1,
+    "tax": 0.09,
+    "total": 1.09
+    }
