@@ -3,12 +3,6 @@
 
 POST http://localhost:3000/orders.json
 Authorization: Bearer {{jwt}}
-Content-Type: application/json
-
-{
-  "product_id": 1,
-  "quantity": 3
-}
 
 ###
 

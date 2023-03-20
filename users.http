@@ -1,14 +1,3 @@
-POST http://localhost:3000/users.json
-Content-Type: application/json
-
-{
-"name": "Gretel",
-"email": "gretel@test.com",
-"password": "password",
-"password_confirmation": "password"
-}
-###
-
 POST http://localhost:3000/sessions.json
 Content-Type: application/json
 

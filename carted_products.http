@@ -1,12 +1,12 @@
+@jwt = 
+
 POST http://localhost:3000/carted_products.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
     "product_id": 2,
-    "quantity": 1,
-    "status": "carted",
-    "order_id": 1
+    "quantity": 1
 }
 
 ###
