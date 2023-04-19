@@ -14,12 +14,5 @@ GET http://localhost:3000/carted_products.json
 Authorization: Bearer {{jwt}}
 
 ###
-POST http://localhost:3000/carted_products.json
+DELETE http://localhost:3000/carted_products/7.json
 Authorization: Bearer {{jwt}}
-Content-Type: application/json
-
-{
-    "subtotal": 1,
-    "tax": 0.09,
-    "total": 1.09
-    }
