@@ -11,6 +11,8 @@ class Product < ApplicationRecord
   has_many :orders, through: :carted_products
   has_many :product_categories
   has_many :categories, through: :product_categories
+
+  accepts_nested_attributes_for :images
    
   # def is_discounted?
     #     if price <= 10
@@ -30,10 +32,10 @@ class Product < ApplicationRecord
     #     return total
     # end
 
-    validates :name, presence: true
-    validates :name, uniqueness: true
-    validates :price, presence: true
-    validates :price, numericality: {greater_than: 0}
-    validates :description, presence: true
+    # validates :name, presence: true
+    # validates :name, uniqueness: true
+    # validates :price, presence: true
+    # validates :price, numericality: {greater_than: 0}
+    # validates :description, presence: true
   
 end

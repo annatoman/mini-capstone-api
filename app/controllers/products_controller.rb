@@ -13,15 +13,16 @@ class ProductsController < ApplicationController
     end
 
     def create
-        @product = Product.create(
+        @product = Product.new(
             supplier_id: params[:supplier_id],
             name: params[:name],
             price: params[:price],
             description: params[:description],
             quantity_in_stock: params[:quantity_in_stock]
         )
-        if @product.valid?
-            Image.create(product_id: @product_id, url: params[:image_url])
+        @product.save
+        if @product.save
+            Image.create(product_id: @product.id, url: params[:url])
             render :show
         else
             render json: {errors: @product.errors.full_messages}, status: :unprocessable_entity
